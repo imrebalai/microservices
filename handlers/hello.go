@@ -24,7 +24,7 @@ func (h *Hello) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
 		http.Error(rw, "Oooops", http.StatusBadRequest)
 		return
 	}
-	log.Printf("Data %s \n", d)
-	fmt.Fprintf(rw, "Hello %s \n", d)
+	log.Printf("Data received:%s \n", d)
+	fmt.Fprintf(rw, "Data received: %s \n", d)
 
 }
