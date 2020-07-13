@@ -1,3 +1,3 @@
-module microservices/handlers
+module microservices
 
 go 1.13
